@@ -59,9 +59,9 @@ class Song
           counter +=1
         end
         @@hash_final[@genre] = counter
-#binding.pry = {@@hash_final = {"rap"=>1}} which is correct
+#binding.pry = @@hash_final = {"rap"=>1}} which is correct
       end
-binding.pry
+binding.pry #= @@hash_final = "nil"
       @@hash_final
     end
   end
