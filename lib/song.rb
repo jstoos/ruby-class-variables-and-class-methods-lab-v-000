@@ -60,7 +60,7 @@ class Song
         end
         @@hash_final[@individual_genre]=array.count
       end
-  
+
     @@hash_final
     end
   end
