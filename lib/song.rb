@@ -60,6 +60,8 @@ class Song
         end
         hash[@genre] = counter
       end
+      @@hash_final << hash
+    end
   end
 
 end
