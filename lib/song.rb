@@ -31,13 +31,13 @@ class Song
   def self.artists
     binding.pry
     @@artists.each do |indiv_artist|
-      @@unique_artists.any? do |array_item|
-        array_item = indiv_artist
+      # @@unique_artists.any? do |array_item|
+      #   array_item = indiv_artist
         # if false
         @@unique_artists << indiv_artist
         # end
-      end
-    @@unique_artists
+    #   end
+    # @@unique_artists
     end
   end
 
