@@ -63,7 +63,7 @@ class Song
       end
     @@hash_final
     end
-  end
+
 
   def self.artist_count
       @@unique_artists.reverse.each do |unique_artists_item|
@@ -79,4 +79,4 @@ class Song
     @@hash_final
     end
   end
-
+end
