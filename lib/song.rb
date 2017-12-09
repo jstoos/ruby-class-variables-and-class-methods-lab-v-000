@@ -59,8 +59,8 @@ class Song
         if individual_genre = @genre_item
           counter +=1
         end
+        @@hash_final[@genre_item] = counter
       end
-      @@hash_final[@genre_item] = counter
     end
   @@hash_final
   end
