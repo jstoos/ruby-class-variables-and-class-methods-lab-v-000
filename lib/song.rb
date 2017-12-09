@@ -58,9 +58,8 @@ class Song
       @@genres.each do |individual_genre|
         if individual_genre = @genre_item
           counter +=1
-          individual_genre_item = counter
         end
-        @@hash_final[@genre_item] = individual_genre_item
+        @@hash_final[@genre_item] = counter
       end
     end
   @@hash_final
