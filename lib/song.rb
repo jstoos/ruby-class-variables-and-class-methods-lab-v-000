@@ -50,7 +50,7 @@ class Song
     @@unique_genre
   end
 
-  def genre_count
+  def self.genre_count
     counter = 0
     hash = {}
     @@unique_genre.each do |genre|
