@@ -55,6 +55,7 @@ class Song
     @@unique_genre.each do |genre|
       @genre = genre
       @@genres.each do |individual_genre|
+        binding.binding.pry
         if individual_genre = @genre
           counter +=1
         end
