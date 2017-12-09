@@ -51,14 +51,14 @@ class Song
   end
 
   def self.genre_count
-    counter = 0
+    @counter = 0
     @@unique_genre.each do |genre|
       @genre = genre
       @@genres.each do |individual_genre|
         if individual_genre = @genre
-          counter +=1
+          @counter +=1
         end
-        @@hash_final[@genre] = counter
+        @@hash_final[@genre] = @counter
       end
       @@hash_final
     end
