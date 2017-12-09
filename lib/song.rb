@@ -55,9 +55,10 @@ class Song
         array = []
         @@genres.each do |individual_genre|
 
-          if individual_genre == unique_genre_item
+          if individual_genre = unique_genre_item
             array << individual_genre
           end
+          
           @individual_genre = unique_genre_item
         end
         @@hash_final[@individual_genre]=array.count
