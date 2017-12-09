@@ -54,12 +54,12 @@ class Song
 
     @@unique_genre.reverse.each do |genre, counter|
       @genre_item = genre
-      counter = 0
+      @counter = 0
       @@genres.each do |individual_genre|
         if individual_genre = @genre_item
-          counter +=1
+          @counter +=1
         end
-        @@hash_final[@genre_item] = counter
+        @@hash_final[@genre_item] = @counter
       end
     end
   @@hash_final
