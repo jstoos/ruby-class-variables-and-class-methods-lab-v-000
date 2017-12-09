@@ -15,7 +15,8 @@ class Song
   @@artists = []
   @@unique_artists = []
   @@unique_genre = []
-  @@hash_final = {}
+  @@artist_hash_final = {}
+  @@genre_hash_final = {}
 
   def initialize(name, artist, genre)
     @@count += 1
@@ -59,9 +60,9 @@ class Song
           end
           @individual_genre = unique_genre_item
         end
-        @@hash_final[@individual_genre]=array.count
+        @@genre_hash_final[@individual_genre]=array.count
       end
-    @@hash_final
+    @@genre_hash_final
   end
 
 
@@ -74,9 +75,9 @@ class Song
           end
           @individual_artists = unique_artists_item
         end
-        @@hash_final[@individual_artists]=array.count
+        @@artist_hash_final[@individual_artists]=array.count
       end
-    @@hash_final
+    @@artist_hash_final
   end
 
 
