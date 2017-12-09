@@ -52,9 +52,9 @@ class Song
 
     def self.genre_count
 
-      @@unique_genre.reverse.each do |genre|
+      @@unique_genre.reverse.each do |genre, array = []|
         @genre_item = genre
-        @@genres.each do |individual_genre, array=[]|
+        @@genres.each do |individual_genre|
           if individual_genre = @genre_item
             array << @genre_item
           end
