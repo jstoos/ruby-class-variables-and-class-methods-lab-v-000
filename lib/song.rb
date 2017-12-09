@@ -54,6 +54,8 @@ class Song
       @@unique_genre.reverse.each do |unique_genre_item|
         array = []
         @@genres.each do |individual_genre|
+
+      binding.pry
           if individual_genre = unique_genre_item
             array << individual_genre
           end
