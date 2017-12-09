@@ -49,4 +49,17 @@ class Song
     @@unique_genre
   end
 
+  def genre_count
+    counter = 0
+    hash = {}
+    @@unique_genre.each do |genre|
+      @genre = genre
+      @@genres.each do |individual_genre|
+        if individual_genre = @genre
+          counter +=1
+        end
+        hash[@genre] = counter
+      end
+  end
+
 end
