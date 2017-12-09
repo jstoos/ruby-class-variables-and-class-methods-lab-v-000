@@ -60,6 +60,7 @@ class Song
           counter +=1
         end
         @@hash_final[@genre_item] = counter
+        counter = 0
       end
     end
   @@hash_final
