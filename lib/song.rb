@@ -51,7 +51,7 @@ class Song
   end
 
     def self.genre_count
-  
+
       @@unique_genre.reverse.each do |genre|
         @genre_item = genre
         counter = 0
@@ -69,7 +69,7 @@ class Song
 
 
 #   def self.genre_count
-# 
+#
 #     @@unique_genre.reverse.each do |genre, counter|
 #       @genre_item = genre
 #       counter = 0
