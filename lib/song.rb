@@ -56,8 +56,11 @@ class Song
 
         @@genres.each do |individual_genre|
           if individual_genre = unique_genre_item
+            puts individual_genre, unique_genre_item
             array << individual_genre
             @individual_genre = individual_genre
+          else
+            puts "else", individual_genre, unique_genre_item
           end
 
         end
