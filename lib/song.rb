@@ -53,7 +53,7 @@ class Song
     def self.genre_count
 
       @@unique_genre.reverse.each do |genre, array = []|
-e
+
         @@genres.each do |individual_genre|
           if individual_genre = genre
             array << genre
