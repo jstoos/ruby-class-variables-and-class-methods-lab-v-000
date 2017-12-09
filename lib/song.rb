@@ -65,6 +65,6 @@ class Song
       @@hash_final
     end
 #binding.pry @@hash_final = {"rap"=>3, "pop"=>6}(using @genre)
-  end
   @@hash_final
+  end
 end
