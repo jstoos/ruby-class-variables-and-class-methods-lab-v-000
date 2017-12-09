@@ -58,6 +58,7 @@ class Song
           if individual_genre = unique_genre_item
             array << individual_genre
           end
+        array
         end
         @@hash_final[@individual_genre]=array.count
       end
