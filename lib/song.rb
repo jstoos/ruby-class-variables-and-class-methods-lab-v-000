@@ -62,7 +62,7 @@ class Song
         @@hash_final[@individual_genre]=array.count
       end
     @@hash_final
-    end
+  end
 
 
   def self.artist_count
@@ -77,6 +77,7 @@ class Song
         @@hash_final[@individual_artists]=array.count
       end
     @@hash_final
-    end
   end
+
+  
 end
