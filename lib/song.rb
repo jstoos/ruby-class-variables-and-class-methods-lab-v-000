@@ -58,7 +58,7 @@ class Song
           if individual_genre = genre
             array << individual_genre
           end
-          @@hash_final[genre] = array.count
+          @@hash_final[individual_genre] = array.count
         end
       end
     @@hash_final
