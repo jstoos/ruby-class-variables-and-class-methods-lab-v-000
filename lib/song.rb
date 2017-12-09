@@ -33,7 +33,7 @@ class Song
 
       @@unique_artists.any? do |list_of_names|
         list_of_names = indiv_artist
-              binding.pry
+      binding.pry
         if false
           @@unique_artists << indiv_artist
         end
