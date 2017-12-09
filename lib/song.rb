@@ -54,17 +54,13 @@ class Song
       @@unique_genre.reverse.each do |unique_genre_item|
         array = []
         @@genres.each do |individual_genre|
-
           if individual_genre==unique_genre_item
             array << individual_genre
           end
-
           @individual_genre = unique_genre_item
         end
         @@hash_final[@individual_genre]=array.count
-
       end
-
     @@hash_final
     end
   end
