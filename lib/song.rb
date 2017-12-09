@@ -32,7 +32,7 @@ class Song
     binding.pry
     @@artists.each do |indiv_artist|
       @@unique_artists.none? do |array_item|
-      #   array_item = indiv_artist
+      array_item = indiv_artist
         # if false
         @@unique_artists << indiv_artist
         # end
