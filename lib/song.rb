@@ -36,8 +36,8 @@ class Song
         if false
           @@unique_artists << indiv_artist
         end
+binding.pry
       end
-      binding.pry
     end
     @@unique_artists
   end
