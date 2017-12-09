@@ -29,7 +29,6 @@ class Song
   end
 
   def self.artists
-
     @@artists.each do |indiv_artist|
       @indiv_artist = indiv_artist
       if @@unique_artists.none? {|x| x == indiv_artist}
@@ -37,6 +36,16 @@ class Song
       end
     end
     @@unique_artists
+  end
+
+  def self.genres
+    @@genres.each do |indiv_genre|
+      @indiv_genre = indiv_artist
+      if @@unique_genre.none? {|x| x == indiv_genre}
+         @@unique_genre << @indiv_genre
+      end
+    end
+    @@unique_genre
   end
 
 end
