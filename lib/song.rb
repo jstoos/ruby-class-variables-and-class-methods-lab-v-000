@@ -50,37 +50,20 @@ class Song
     @@unique_genre
   end
 
-    def self.genre_count
-      @@genres.each do |individual_genre|
-        @@unique_genre.reverse.each do |unique_genre_item, array=[]|
-         if individual_genre = unique_genre_item
-           array << individual_genre
-           @array = array
-         end
-         @individual_genre = individual_genre
-       end
-       @@hash_final[@individual_genre]=@array.count
-     end
-
-   @@hash_final
-   end
- end
-
-
-
-  #     @@unique_genre.reverse.each do |unique_genre_item, array=[]|
-  #       @@genres.each do |individual_genre|
-  #         if individual_genre = unique_genre_item
-  #           array << individual_genre
-  #         end
-  #         @individual_genre = individual_genre
-  #       end
-  #       @@hash_final[@individual_genre]=array.count
-  #     end
-  #
-  #   @@hash_final
-  #   end
-  # end
+  def self.genre_count
+      @@unique_genre.reverse.each do |unique_genre_item, array=[]|
+        @@genres.each do |individual_genre|
+          if individual_genre = unique_genre_item
+            array << individual_genre
+          end
+          @individual_genre = individual_genre
+        end
+        @@hash_final[@individual_genre]=array.count
+      end
+  
+    @@hash_final
+    end
+  end
   #
   #
 
