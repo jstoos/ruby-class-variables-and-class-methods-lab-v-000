@@ -64,7 +64,7 @@ binding.pry
       end
 #binding.pry #= @@hash_final = {"rap"=>3} which is incorrect (using @genre)
 #binding.pry #= @@hash_final == {nil=>1} (using genre)
-      @@hash_final 
+      @@hash_final
     end
 #binding.pry @@hash_final = {"rap"=>3, "pop"=>6}(using @genre)
   @@hash_final
