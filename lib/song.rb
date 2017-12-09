@@ -37,7 +37,7 @@ binding.pry
       #   @@unique_artists << y
       # elsif @@unique_artists.none? {|x| x == indiv_artist}
       #   @@unique_artists << indiv_artist
-      end
+      #end
     end
     @@unique_artists
   end
