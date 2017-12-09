@@ -62,7 +62,7 @@ class Song
           @individual_genre = unique_genre_item
         end
         @@hash_final[@individual_genre]=array.count
-    binding.pry
+
       end
 
     @@hash_final
