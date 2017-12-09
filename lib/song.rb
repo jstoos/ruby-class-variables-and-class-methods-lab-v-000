@@ -34,8 +34,8 @@ class Song
       if @@unique_artists.none? {|x| x = indiv_artist }
         @@unique_artists << indiv_artist
       end
-    @@unique_artists
     end
+    @@unique_artists
   end
 
 end
