@@ -64,22 +64,19 @@ class Song
     @@hash_final
     end
   end
-  #
-  #
 
-#   def self.genre_count
-#
-#     @@unique_genre.reverse.each do |genre, counter|
-#       @genre_item = genre
-#       counter = 0
-#       @@genres.each do |individual_genre|
-#         individual_counter = counter
-#         if individual_genre = @genre_item
-#           individual_counter +=1
-#         end
-#         @@hash_final[@genre_item] = individual_counter
-#       end
-#     end
-#   @@hash_final
-#   end
-# end
+  def self.artist_count
+      @@unique_artists.reverse.each do |unique_artists_item|
+        array = []
+        @@artists.each do |individual_artists|
+          if individual_artists==unique_artists_item
+            array << individual_artists
+          end
+          @individual_artists = unique_artists_item
+        end
+        @@hash_final[@individual_artists]=array.count
+      end
+    @@hash_final
+    end
+  end
+
