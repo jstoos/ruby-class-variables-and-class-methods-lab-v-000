@@ -31,13 +31,12 @@ class Song
   def self.artists
 binding.pry
     @@artists.each do |indiv_artist|
-      y = indiv_artist
-      puts y
-      # if @@unique_artists == []
-      #   @@unique_artists << y
-      # elsif @@unique_artists.none? {|x| x == indiv_artist}
-      #   @@unique_artists << indiv_artist
-      #end
+      @indiv_artist = indiv_artist
+       if @@unique_artists == []
+         @@unique_artists << @indiv_artist
+       elsif @@unique_artists.none? {|x| x == indiv_artist}
+         @@unique_artists << @indiv_artist
+      end
     end
     @@unique_artists
   end
