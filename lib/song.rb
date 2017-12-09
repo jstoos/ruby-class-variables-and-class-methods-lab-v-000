@@ -53,17 +53,17 @@ class Song
   def self.genre_count
     counter = 0
     @@unique_genre.each do |genre|
-      @genre = genre
+      genre = genre
       @@genres.each do |individual_genre|
-        if individual_genre = @genre
+        if individual_genre = genre
           counter +=1
         end
         @@hash_final[@genre] = counter
-#binding.pry = @@hash_final = {"rap"=>1}} which is correct
+#binding.pry = @@hash_final = {"rap"=>1}} which is correct (using @genre)
       end
-#binding.pry #= @@hash_final = {"rap"=>3} which is incorrect
+#binding.pry #= @@hash_final = {"rap"=>3} which is incorrect (using @genre)
       @@hash_final
     end
-binding.pry
+#binding.pry @@hash_final = {"rap"=>3, "pop"=>6}(using @genre)
   end
 end
