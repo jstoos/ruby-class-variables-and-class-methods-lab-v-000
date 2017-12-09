@@ -59,10 +59,10 @@ class Song
             array << individual_genre
             @individual_genre = individual_genre
           end
-
         end
         @@hash_final[@individual_genre]=array.count
       end
+      
     @@hash_final
     end
   end
