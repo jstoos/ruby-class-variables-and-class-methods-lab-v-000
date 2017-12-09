@@ -15,6 +15,7 @@ class Song
   @@artists = []
   @@unique_artists = []
   @@unique_genre = []
+  @@hash_final = {}
 
   def initialize(name, artist, genre)
     @@count += 1
