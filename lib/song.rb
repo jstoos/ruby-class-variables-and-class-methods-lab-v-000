@@ -32,7 +32,7 @@ class Song
 binding.pry
     @@artists.each do |indiv_artist|
       y = indiv_artist
-      if @@unique_artists = []
+      if @@unique_artists == []
         @@unique_artists << y
       # elsif @@unique_artists.none? {|x| x == indiv_artist}
       #   @@unique_artists << indiv_artist
