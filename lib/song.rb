@@ -64,10 +64,12 @@ class Song
       end
 #binding.pry #= @@hash_final = {"rap"=>3} which is incorrect (using @genre)
 #binding.pry #= @@hash_final == {nil=>1} (using genre)
-binding.pry
+#binding.pry #= @@hash_final = {"rap"=>3} which is incorrect (using @genre_item)
+
       @@hash_final
     end
 #binding.pry @@hash_final = {"rap"=>3, "pop"=>6}(using @genre)
+binding.pry
   @@hash_final
   end
 end
