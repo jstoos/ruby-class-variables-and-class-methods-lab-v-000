@@ -57,7 +57,7 @@ class Song
         @@genres.each do |individual_genre|
           if individual_genre = unique_genre_item
             array << individual_genre
-            @individual_genre = individual_genre         
+            @individual_genre = individual_genre
           end
 
         end
