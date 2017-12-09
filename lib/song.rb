@@ -56,7 +56,7 @@ class Song
 
         @@genres.each do |individual_genre|
           if individual_genre = genre
-            array << genre
+            array << individual_genre
           end
           @@hash_final[genre] = array.count
         end
