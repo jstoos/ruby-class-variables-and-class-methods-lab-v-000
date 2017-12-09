@@ -54,7 +54,6 @@ class Song
 
       @@unique_genre.reverse.each do |genre|
         @genre_item = genre
-        genre_array = []
         @@genres.select do |individual_genre, array=[]|
           if individual_genre = @genre_item
             array << @genre_item
