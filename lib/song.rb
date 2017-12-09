@@ -29,7 +29,7 @@ class Song
   end
 
   def self.artists
-    binding.pry
+
     @@artists.each do |indiv_artist|
       if @@unique_artists.none? {|x| x = indiv_artist }
         @@unique_artists << indiv_artist
