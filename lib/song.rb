@@ -59,6 +59,7 @@ binding.pry
             array << individual_genre
             @individual_genre = individual_genre
           end
+          array
         end
         @@hash_final[@individual_genre]=array.count
       end
