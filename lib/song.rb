@@ -30,13 +30,11 @@ class Song
 
   def self.artists
     @@artists.each do |indiv_artist|
-
-      @@unique_artists.any? do |list_of_names|
-        list_of_names = indiv_artist
-        if false
-          @@unique_artists << indiv_artist
-        end
-binding.pry
+      @@unique_artists.any? do |array_item|
+        array_item = indiv_artist
+      end
+      if false
+        @@unique_artists << indiv_artist
       end
     end
     @@unique_artists
