@@ -59,7 +59,7 @@ class Song
           counter +=1
         end
         @@hash_final[@genre] = counter
-binding.binding.pry
+binding.pry
       end
       @@hash_final
     end
