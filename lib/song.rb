@@ -40,7 +40,7 @@ class Song
 
   def self.genres
     @@genres.each do |indiv_genre|
-      @indiv_genre = indiv_artist
+      @indiv_genre = indiv_genre
       if @@unique_genre.none? {|x| x == indiv_genre}
          @@unique_genre << @indiv_genre
       end
