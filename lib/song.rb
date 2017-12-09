@@ -64,5 +64,4 @@ class Song
       @@hash_final << hash
     end
   end
-
 end
